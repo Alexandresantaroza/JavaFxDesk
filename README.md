@@ -39,7 +39,7 @@ Com o uso de Java, FXML e CSS há separação entre interface de usuário (Telas
 Construção do Projeto:
 ----------------------
 
-O programa principal contém 3 classes Java (inicialização e controle), 1 arquivo FXML (tela), 1 arquivo CSS (estilo) e 1 arquivo de imagem (background).
+O programa principal contém 3 classes Java (inicialização, controle e lógica), 1 arquivo FXML (tela), 1 arquivo CSS (estilo) e 1 arquivo de imagem (background).
 
 - LoginITI.java :             Inicia a aplicação (Stage), define o título da janela, dimensiona sua largura e altura, define qual arquivo FXML será utilizado.
                          
