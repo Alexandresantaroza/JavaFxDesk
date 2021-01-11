@@ -58,9 +58,9 @@ Explicação da Lógica Principal:
 
 A variável "pass" recebe a senha digitada pelo usuário e o texto com haspas é a expressão regular que verifica se a senha contém ou não o padrão buscado.
 
-Em Java, a instrução: Pattern.matches(".*[a-z]+.*",pass) retorna true se o conteúdo de "pass" contiver o padrão buscado na expressão ".*[a-z]+.*" ou false, em caso contrário.
+Em Java, a instrução: Pattern.matches(".\*[a-z]+.\*",pass) retorna true se o conteúdo de "pass" contiver o padrão buscado na expressão ".\*[a-z]+.\*" ou false, em caso contrário.
 
-Importante: pode haver o símbolo de exclamação antes da instrução acima, como no caso: !Pattern.matches(".*\\s+.*",pass). Se o resultado da instrução for true, 
+Importante: pode haver o símbolo de exclamação antes da instrução acima, como no caso: !Pattern.matches(".\*\\s+.\*",pass). Se o resultado da instrução for true, 
             se tornará false e se for false, se tornará true; ou seja, nega o resultado.
             
  
