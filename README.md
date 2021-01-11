@@ -19,11 +19,11 @@ Pasta "LoginITI_Proj":                Projeto JavaFx. Assista pelo link abaixo u
                                       **[Nota (BUG)]: Há o arquivo "LoginITI.jar" dentro desta pasta que é o executável. Houve problemas na execução, a aplicação não está 
                                       carregando o arquivo CSS quando é executada por este jar ficando sem a imagem de background e sem a cor de fundo. A funcionalidade porém 
                                       não foi afetada. Ver telas na pasta "AmostrasTela" ou baixar o projeto e carregar no Eclipse para executar sem esse problema ou
-                                      clique no link acima para assistir um exempo de execução.
+                                      clique no link acima para assistir a um exempo de execução.
                                                      
                                                      
 Pasta "RelatóriosHTML_JUnitTests":    Contém um arquivo "rar" (compactado) contendo páginas HTML do relatório de testes. Para vizualizar, baixe e descompacte em uma pasta
-                                      qualquer.
+                                      qualquer; depois, clique sobre o arquivo "index.html".
 
 
 Motivação do uso do JavaFx:
@@ -31,7 +31,7 @@ Motivação do uso do JavaFx:
 
 O JavaFx é uma solução RIA (Rich Internet Applications) versátil e que pode ser desenvolvido com relativa rapidez.
 
-Possui diversas formas de deploy como aplicações desktop e web, além disso é possível desenvolver a applicação inteiramente na linguagem Java ou utilizar os arquivos FXML e CSS para o layout e estilo conjuntamente.
+Possui diversas formas de deploy como aplicações desktop e web, além disso é possível desenvolver a applicação inteiramente na linguagem Java ou utilizar os arquivos FXML e CSS para o layout e estilo em conjunto.
 
 Com o uso de Java, FXML e CSS há separação entre interface de usuário (Telas) da lógica de programação (Back), como é feito em Java Web (padrão MVC).
 
