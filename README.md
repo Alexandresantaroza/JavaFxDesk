@@ -14,7 +14,7 @@ Pasta "AmostrasTela":                 Possui vários prints de execução da apl
 Pasta "LoginITI_Proj":                Projeto JavaFx.
 
                                       **[Nota (BUG)]: Há o arquivo "LoginITI.jar" dentro desta pasta que é o executável. Houve problemas na execução, a aplicação não está 
-                                      carregando o arquivo CSS quando é executada por este jar ficando sem a imagem de background e sem a cor de fundo. A funcionalidade, porém 
+                                      carregando o arquivo CSS quando é executada por este jar ficando sem a imagem de background e sem a cor de fundo. A funcionalidade porém 
                                       não foi afetada. Ver telas na pasta "AmostrasTela" ou baixar o projeto e carregar no Eclipse para executar sem esse problema.
                                       
 
