@@ -56,12 +56,12 @@ Há 2 classes de teste, uma para verificar se o JUnit foi bem instalado: "TesteC
 Explicação da Lógica Principal:
 -------------------------------
 
-A variável "pass" recebe a senha digitada pelo usuário e o texto com haspas é a expressão regular que verifica se a senha contém ou não o padrão.
+A variável "pass" recebe a senha digitada pelo usuário e o texto com haspas é a expressão regular que verifica se a senha contém ou não o padrão buscado.
 
-Em Java, a instrução: "Pattern.matches(".*[a-z]+.*",pass)" retorna true se o conteúdo de "pass" conter o padrão buscado ou false, em caso contrário.
+Em Java, a instrução: Pattern.matches(".*[a-z]+.*",pass) retorna true se o conteúdo de "pass" contiver o padrão buscado na expressão ".*[a-z]+.*" ou false, em caso contrário.
 
-Importante: pode haver o simbolo de exclamação antes da instrução acima, como no caso abaixo "!Pattern.matches(".*\\s+.*",pass)". Se o resultado da instrução for true, 
-            se torna false e se for false, vira true; ou seja, nega o resultado.
+Importante: pode haver o símbolo de exclamação antes da instrução acima, como no caso: !Pattern.matches(".*\\s+.*",pass). Se o resultado da instrução for true, 
+            se tornará false e se for false, se tornará true; ou seja, nega o resultado.
             
  
 ![logicaPrincipal](https://user-images.githubusercontent.com/76496007/104141132-ed367880-5393-11eb-8272-1c0ecdf5b16b.png)
