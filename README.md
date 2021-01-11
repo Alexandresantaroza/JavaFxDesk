@@ -11,14 +11,17 @@ Conteúdo do repositório "JavaFxDesk":
 
 Pasta "AmostrasTela":                 Possui vários prints de execução da aplicação direto no Eclipse.
 
+
 Pasta "LoginITI_Proj":                Projeto JavaFx. Assista pelo link abaixo um pequeno video de exemplo de execução: 
-                                      <h4>#https://user-images.githubusercontent.com/76496007/104141577-3f789900-5396-11eb-9d29-a9037ff36ea1.mp4
+                                      <h4>https://user-images.githubusercontent.com/76496007/104141577-3f789900-5396-11eb-9d29-a9037ff36ea1.mp4</h4>
+
 
                                       **[Nota (BUG)]: Há o arquivo "LoginITI.jar" dentro desta pasta que é o executável. Houve problemas na execução, a aplicação não está 
                                       carregando o arquivo CSS quando é executada por este jar ficando sem a imagem de background e sem a cor de fundo. A funcionalidade porém 
                                       não foi afetada. Ver telas na pasta "AmostrasTela" ou baixar o projeto e carregar no Eclipse para executar sem esse problema ou
                                       clique no link acima para assistir um exempo de execução.
-                                                                                                             
+                                                     
+                                                     
 Pasta "RelatóriosHTML_JUnitTests":    Contém um arquivo "rar" (compactado) contendo páginas HTML do relatório de testes. Para vizualizar, baixe e descompacte em uma pasta
                                       qualquer.
 
