@@ -46,3 +46,40 @@ O programa principal contém 3 classes Java (inicialização e controle), 1 arqu
                           
 
 Há 2 classes de teste, uma para verificar se o JUnit foi bem instalado: "TesteConfiguracaoJUnit" e a principal: "ValidaSenhaTest.java" que testa a lógica da validação da senha digitada.
+
+
+
+Explicação da Lógica Principal:
+-------------------------------
+
+A variável "pass" recebe a senha digitada pelo usuário e o texto com haspas é a expressão regular que verifica se a senha contém ou não o padrão.
+
+Em Java, a instrução: "Pattern.matches(".*[a-z]+.*",pass)" retorna true se o conteúdo de "pass" conter o padrão buscado ou false, em caso contrário.
+
+Importante: pode haver o simbolo de exclamação antes da instrução acima, como no caso abaixo "!Pattern.matches(".*\\s+.*",pass)". Se o resultado da instrução for true, 
+            se torna false e se for false, vira true; ou seja, nega o resultado.
+            
+            
+CÓDIDO    (as linhas em branco não afetam)                          EXPLICAÇÃO
+------                                                              ----------
+
+if( Pattern.matches(".*[a-z]+.*",pass) &&                           > Não importa quais ou quantos caracteres hajam na senha, se tiver ao menos 1 letra minúscula será true aqui
+    Pattern.matches(".*[A-Z]+.*",pass) &&                           > Não importa quais ou quantos caracteres hajam na senha, se tiver ao menos 1 letra maiúscula será true aqui
+    Pattern.matches(".*[0-9]+.*",pass) &&                           > Não importa quais ou quantos caracteres hajam na senha, se tiver ao menos 1 número será true aqui
+    Pattern.matches(".*[!@#$%^&*()-+]+.*",pass) &&                  > Não importa quais ou quantos caracteres hajam na senha, se tiver ao menos 1 dos caracteres 
+                                                                      entre colchetes será true aqui
+   !Pattern.matches(".*\\s+.*",pass) &&                             > Não importa quais ou quantos caracteres hajam na senha, se tiver ao menos 1 espaço será true e em 
+                                                                      seguida resultará em false pois será negado pela exclamação no inicio da instrução
+    Pattern.matches(".{9,}",pass) &&                                > Não importa quais ou quantos caracteres hajam na senha, se tiver no mínimo 9 será true aqui
+   !Pattern.matches(".*([!@#$%^&*()-+a-zA-Z0-9]).*\\1+.*",pass)) {  > Não importa quais ou quantos caracteres hajam na senha, se existir um dos caracteres entre 
+                                                                      parenteses seguido por qualquer coisa ".*" e depois seguido pelo mesmo caracter "\\1+" uma ou
+                                                                      mais vezes será true que será negado pela exclamação e resutará false. Ou seja, não pode haver 
+                                                                      repetição. O simbolo \\1 reproduz (exibe) o mesmo caracter que estiver dentro do parenteses que foi 
+                                                                      encontrado pelo padrão.
+                    return true;             
+} else {
+                    return false;
+}
+
+Eu testei diversas vezes incluindo os testes de unidade e deu tudo certo, não sei se há problemas na lógica...
+            
